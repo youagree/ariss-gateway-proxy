@@ -13,6 +13,11 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      routes:
+        - id: websocket-car-entry
+          uri: http://car-entry-control/
+          predicates:
+            - Path=/gs-guide-websocket/**
 #    routes:
 #      - id: device-registration-core
 #        uri: lb://device-registration-core
