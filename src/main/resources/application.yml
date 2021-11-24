@@ -18,6 +18,10 @@ spring:
           uri: http://car-entry-control/
           predicates:
             - Path=/gs-guide-websocket/**
+        - id: websocket-qr-entry
+          uri: http://qr-entry-control/
+          predicates:
+            - Path=/gs-guide-websocket/**
 #    routes:
 #      - id: device-registration-core
 #        uri: lb://device-registration-core
